@@ -21,10 +21,13 @@ function calculateTax(income) {
         }
 
         ctrFill++;
+        if (ctrFill >= taxTbl.length) {
+            ctrFill--;
+        }
     }
 
     return tax;
 }
 
 // test here
-console.log(calculateTax(55000));
+console.log(calculateTax(550000));
